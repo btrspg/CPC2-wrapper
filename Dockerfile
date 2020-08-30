@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ARG depends="python3 python3-dev python3-pip"
+ARG depends="build-essential python3 python3-dev python3-pip"
 
 RUN apt update && apt install -y $depends
 

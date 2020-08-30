@@ -10,8 +10,8 @@ import pkg_resources
 
 
 def get_data():
-    model = pkg_resources.resource_dir(__name__, 'data/cpc2.model')
-    rg = pkg_resources.resource_dir(__name__, 'data/cpc2.range')
+    model = pkg_resources.resource_filename(__name__, 'data/cpc2.model')
+    rg = pkg_resources.resource_filename(__name__, 'data/cpc2.range')
     return model, rg
 
 

@@ -24,3 +24,7 @@ jobs:
         echo VERSION=$VERSION
         docker tag newbuild $IMAGE_ID:$VERSION
         docker push $IMAGE_ID:$VERSION
+    - name: TEST
+        run: |
+          docker run --rm -v `pwd`:`pwd` -w `pwd` $IMAGE_ID:$VERSION bash -c "CPC2.py -i cpc2/data/example.fasta -o test.out "
+          head test.out.txt

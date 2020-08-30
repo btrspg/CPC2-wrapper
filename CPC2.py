@@ -366,7 +366,7 @@ def calculate_potential(fasta, strand, output_orf, outfile, libsvm_bin):
     if exitstatus == 0:
         os.system('rm -f ' + outfile + '.tmp.1 ' + outfile + '.tmp.2 ' + outfile + '.tmp.out ' + outfile)
         rm_cmd = "rm -f " + outfile + '.feat'
-        subprocess.check_call(cmd, shell=True)
+        subprocess.check_call(rm_cmd, shell=True)
         sys.stderr.write("[INFO] Running Done!\n")
         return 0
     else:
