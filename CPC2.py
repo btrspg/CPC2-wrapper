@@ -30,7 +30,7 @@ def __main():
                             action="store_true")
     Common_group.add_option("--ORF", dest="ORF", help="output the start position of longest ORF [Default: FALSE]",
                             action="store_true")
-    Common_group.add_option("--libsvm-bin", dest="libsvm_bin", help='libsvm bin',
+    Common_group.add_option("--libsvm-bin", dest="libsvm_bin", help='libsvm bin',default='/usr/local/bin/',
                             action='store')
     parser.add_option_group(Common_group)
     (options, args) = parser.parse_args()
