@@ -13,7 +13,7 @@ RUN pip3 install . && \
     tar -zxvf libsvm-3.18.tar.gz && \
     cd libsvm-3.18/ && \
     make clean && make && \
-    cp -r * /usr/local/bin/ && \
+    cp svm-train svm-predict svm-scale /usr/local/bin/ && \
     chmod +x /usr/local/bin/*
 
 WORKDIR /opt
