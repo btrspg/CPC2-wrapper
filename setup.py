@@ -11,6 +11,8 @@ setup(
     license='GPL V3',
     author='CHEN Yuelong',
     author_email='yuelong.chen.btr@gmail.com',
+    include_package_data=True,
+    package_data={'': ['data/cpc2.*']},
     description='''
 This is a wrapper of CPC2 algorithm. Download from original source, [http://cpc2.cbi.pku.edu.cn/data/CPC2-beta.tar.gz](http://cpc2.cbi.pku.edu.cn/data/CPC2-beta.tar.gz), 
  would be perfect. 
