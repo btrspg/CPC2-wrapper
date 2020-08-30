@@ -7,7 +7,7 @@ setup(
     version='0.1.0',
     packages=['cpc2'],
     url='',
-
+    scripts=scripts,
     license='GPL V3',
     author='CHEN Yuelong',
     author_email='yuelong.chen.btr@gmail.com',

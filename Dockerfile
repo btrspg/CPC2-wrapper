@@ -11,7 +11,9 @@ ADD . ./
 RUN pip3 install . && \
     cd libs/libsvm/ && \
     tar -zxvf libsvm-3.18.tar.gz && \
-    cp -r libsvm-3.18/* /usr/local/bin/ && \
+    cd libsvm-3.18/ && \
+    make clean && make && \
+    cp -r * /usr/local/bin/ && \
     chmod +x /usr/local/bin/*
 
 WORKDIR /opt
