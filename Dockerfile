@@ -8,7 +8,8 @@ WORKDIR /opt/tmp
 
 ADD . ./
 
-RUN pip3 install . && \
+RUN pip3 install -r requirements.txt && \
+    pip3 install . && \
     cd libs/libsvm/ && \
     tar -zxvf libsvm-3.18.tar.gz && \
     cd libsvm-3.18/ && \
