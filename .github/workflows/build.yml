@@ -26,6 +26,5 @@ jobs:
         docker push $IMAGE_ID:$VERSION
     - name: TEST
       run: |
-        docker run --rm -v `pwd`:`pwd` -w `pwd` newbuild bash -c "ls -R"
-        docker run --rm -v `pwd`:`pwd` -w `pwd` newbuild bash -c "CPC2.py -i cpc2/data/example.fa -o test.out "
+        docker run --rm -v `pwd`:`pwd` -w `pwd` newbuild  -i cpc2/data/example.fa -o test.out
         head test.out.txt

@@ -20,5 +20,6 @@ RUN pip3 install -r requirements.txt && \
 WORKDIR /opt
 
 RUN rm -rf /opt/tmp/
+
 ENTRYPOINT CPC2.py
 
