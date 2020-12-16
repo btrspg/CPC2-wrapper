@@ -21,5 +21,5 @@ WORKDIR /opt
 
 RUN rm -rf /opt/tmp/
 
-ENTRYPOINT CPC2.py
+CMD bash
 
